@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Express UK - 'Born to Bus'</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/slider.css">
+	<link rel="shortcut icon" href="favicon.ico" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="description" content="Express UK is Swansea's premier coach service provider. Offering coach journey's to major destinations all over the UK including London airports Heathrow, Gatwick, Stansted and Luton.">
+	<meta name="keywords" content="south london, london, theatre, comedy, sketches, a model life, fringe, edinburgh, ken's christmas crusade, don't disturb the driver, vt, new writing, devised, samuel gregory, nikolai ribnikov, thomas jones, express uk, uk, coaches, bus, travel, swansea, edinburgh, fringe, spoof, thespace, north bridge, the space, coach">
+	<meta property="og:image" content="http://velvettrumpet.co.uk/expressuk/images/gallery/IMG_0979-800.jpg">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header">
+			<div class="inner">
+				<img src="images/banner_logo.jpg" alt="main header">
+					<ul class="list-inline menu">
+						<li><a href="#">Home</a></li>
+						<li><a href="staff.html">Staff</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a href="https://www.edfringe.com/whats-on/theatre/don-t-disturb-the-driver" target="_blank">Fringe</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+			</div>
+		</div>
+		<div class="content">
+			<div class="inner">
+				<div class="main">
+					<div class="section">
+						<h2>News!</h2>
+						<img src="images/will.jpg" alt="will thomas" class="img-l">
+						<div class="info">
+							<p>
+								Exciting news this week! Will Thomas is officially a local celebrity. He is about to become the youngest driver ever to reach a MILLION MILES for Express UK, thus earning himself the prestigious &apos;Golden Gloves&apos; award. Will is to be interviewed this week by Route One magazine and the Evening Post are even coming down to take some photos of our local hero.
+							</p>
+							<p>
+								Will has been with us since he was 20! And we're so proud to have him operating our fleet to London every day. Will is due to earn his millionth mile on his way to London this Friday so unfortunately won&apos;t be home but we will most certainly celebrate when he arrives back here in Swansea. For those of you lucky enough to have a ticket for the 09:30 Swansea-London service on Friday, complimentary party poppers and crisps will be served.
+							</p>
+							<p>(Party poppers are not to be fired whilst the vehicle is in motion. 
+								Please wait until you get to Reading Services between junctions 11-12).</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="grid left">
+					<div class="section">
+						<h2>Call us</h2>
+						<img src="images/becky-ad.jpg" alt="becky">
+						<div class="info">
+							<p>Our team is here to help 24/7</p>
+						</div>
+					</div>
+					
+					<div class="section">
+						<h2>Our services</h2>
+						<div class="info">
+							<h3>We offer the following services</h3>
+							<ul>
+								<li>Airport transfers</li>
+								<li>School trips</li>
+								<li>Business and leisure trips</li>
+							</ul>
+						</div>	
+					</div>
+				</div>
+
+				<div class="grid">
+					<div class="section">
+						<div id="slideshow">
+							<div>
+								<img src="images/team-2.jpg" alt="team" />
+							</div>
+							<div>
+								<img src="images/clive-will.jpg" alt="will and clive" />
+							</div>
+							<div>
+								<img src="images/exuk-sign.jpg" alt="express uk" />
+							</div>
+						</div> 
+					</div>
+
+					<div class="section">
+						<h2>Book now</h2>
+						<div class="info">
+							<a href="https://www.edfringe.com/whats-on/theatre/don-t-disturb-the-driver" class="button" target="_blank">Book tickets</a>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="inner">
+			<footer>
+				<div class="footer">
+					<div>&copy; Velvet Trumpet 2013<br>
+						<a href="http://www.velvettrumpet.co.uk" target="_blank">www.velvettrumpet.co.uk</a>
+					</div>
+					<div></div>
+					<div>
+						<h2>Follow us!</h2>
+						<ul class="list-inline fr">
+							<li><a href="https://www.facebook.com/velvettrumpet" target="_blank"><img src="images/facebook-logo.png" alt="facebook"></a></li>
+							<li><a href="https://twitter.com/velvettrumpet" target="_blank"><img src="images/twitter-logo.png" alt="twitter"></a></li>
+						</ul>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
+	<script type="text/javascript">
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-36421387-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		$(document).ready(function() {
+			$("#slideshow > div:gt(0)").hide();
+
+			setInterval(function() { 
+			  $('#slideshow > div:first')
+			    .fadeOut(1000)
+			    .next()
+			    .fadeIn(1000)
+			    .end()
+			    .appendTo('#slideshow');
+			},  3000);
+
+		});
+	</script>
+</body>
+</html>
